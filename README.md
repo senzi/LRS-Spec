@@ -1,2 +1,50 @@
-# LRS-Spec
-A machine-native content syndication protocol designed for LLMs to ingest, slice, and reason with web content efficiently.
+# 🛰️ LRS-Spec (LLM Reading Stream)
+
+> **"为机器摄取而生，而非仅供人类阅读。"**
+
+**LRS (LLM Reading Stream)** 是一种机器原生的内容分发协议。它是 AI 时代的 RSS，旨在让大语言模型（LLM）能够高效地摄取、切片并推理网页内容，彻底解决 HTML 噪声多、长文本撑爆上下文等痛点。
+
+---
+
+## 📖 协议核心文件
+
+本仓库定义了 LRS 标准的核心组成部分：
+
+* **SPEC.md** (技术规范)
+* **受众**：人类开发者。
+* **内容**：接口路径定义、查询参数规范（`limit`, `year`, `slug` 等）、返回格式及 JSON 预检标准。
+
+
+* **SKILL.md** (Agent 技能描述)
+* **受众**：AI Agents / LLMs。
+* **内容**：告诉 AI 如何与支持 LRS 的站点交互。当 `/lrs.md` 被无参数访问时，应默认返回此文件内容。
+
+
+* **ADAPT.md** (适配指南)
+* **受众**：希望接入协议的博主或开发者。
+* **内容**：提供万能适配提示词（Prompt），帮助开发者通过 AI 快速完成现有站点的 LRS 化改造。
+
+
+
+---
+
+## ✨ 为什么选择 LRS？
+
+1. **Token 经济学**：剔除 HTML 标签、导航栏和广告，仅交付纯净的 Markdown，节省 40% 以上的 Token。
+2. **上下文管理**：通过 `countOnly` 预检和 `year/month` 时间切片，防止 AI 摄取过量数据导致上下文溢出。
+3. **自描述性**：站点根路径 `/lrs.md` 即是说明书，AI 访问后能自动学会如何高效抓取本站内容。
+4. **机器原生**：所有路径自动补全为绝对 URL，AI 无需二次推理即可直接引用图片和链接。
+
+---
+
+## 🚀 快速开始
+
+1. **阅读规范**：查看 [SPEC.md](https://www.google.com/search?q=./SPEC.md) 了解协议细节。
+2. **立即适配**：复制 [ADAPT.md](https://www.google.com/search?q=./ADAPT.md) 中的提示词，发送给你的 AI 助手，为你的博客生成 `/lrs.md` 接口。
+3. **在线演示**：访问 [lrs.closeai.moe](https://www.google.com/search?q=https://lrs.closeai.moe) 查看实时效果。
+
+---
+
+## 🤝 贡献与反馈
+
+LRS 是一个开放且演进中的标准。如果你有更好的想法或发现了 Bug，欢迎提交 Issue 或 Pull Request。
