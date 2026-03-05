@@ -39,9 +39,9 @@
 
 ## 🚀 快速开始
 
-1. **阅读规范**：查看 [SPEC.md](https://www.google.com/search?q=./SPEC.md) 了解协议细节。
-2. **立即适配**：复制 [ADAPT.md](https://www.google.com/search?q=./ADAPT.md) 中的提示词，发送给你的 AI 助手，为你的博客生成 `/lrs.md` 接口。
-3. **在线演示**：访问 [lrs.closeai.moe](https://www.google.com/search?q=https://lrs.closeai.moe) 查看实时效果。
+1. **阅读规范**：查看 SPEC.md 了解协议细节。
+2. **立即适配**：复制 ADAPT.md 中的提示词，发送给你的 AI 助手，为你的博客生成 `/lrs.md` 接口。
+3. **在线演示**：访问 [lrs.closeai.moe](https://lrs.closeai.moe) 查看实时效果。
 
 ---
 
